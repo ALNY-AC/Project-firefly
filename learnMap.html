@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/my-app.css" />
+		<link rel="stylesheet" type="text/css" href="css/node.css" />
+		<title>技能地图</title>
+
+		<style type="text/css">
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">萤火</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">首页
+							</a>
+						</li>
+						<li>
+							<a href="learnMain.html">一览</a>
+						</li>
+						<li>
+							<a href="learnMain.html">手册</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="Join-us.html">关于我们&加入我们</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<div class="container">
+
+			<h1 class="text-center">Web前端</h1>
+			<p>
+				<span class="help-block">（点击前面的小圆点可以查看详细信息哦~）</span>
+				<span class="help-block">（点击技能的名字开始学习技能吧~）</span>
+			</p>
+			<div class="node-box">
+
+				<div class="node">
+					<div class="node-icon"></div>
+					<div class="node-text">
+						<a href="learnGet/html.html">HTML</a>
+					</div>
+				</div>
+				<div class="node-line"></div>
+
+				<div class="node">
+					<div class="node-icon"></div>
+					<div class="node-text">
+						<a href="">CSS</a>
+					</div>
+				</div>
+				<div class="node-line"></div>
+
+				<div class="node">
+					<div class="node-icon"></div>
+					<div class="node-text">
+						<a href="">Javascript</a>
+
+					</div>
+				</div>
+				<div class="node-line"></div>
+
+				<div class="node">
+					<div class="node-icon"></div>
+					<div class="node-text">
+						<a href="">HTML5</a>
+
+					</div>
+				</div>
+				<div class="node-line"></div>
+
+				<div class="node">
+					<div class="node-icon"></div>
+					<div class="node-text">
+						<a href="">CSS3</a>
+
+					</div>
+				</div>
+				<div class="node-line"></div>
+
+				<div class="node">
+					<div class="node-icon"></div>
+					<div class="node-text">
+						<a href="">bootstrap</a>
+						，一款前端响应级样式库。
+					</div>
+				</div>
+				<div class="node-line"></div>
+
+				<div class="node">
+					<div class="node-icon"></div>
+					<div class="node-text">
+						<a href="">JQuery</a>
+						，一个轻量级的"写的少，做的多"的JavaScript库。
+					</div>
+				</div>
+				<div class="node-line"></div>
+
+				<div class="node">
+					<div class="node-icon"></div>
+					<div class="node-text">
+						<a href="">Vue.js</a>
+						，一套构建用户界面的渐进式Js框架。
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal " id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">技能详细信息</h4>
+					</div>
+					<div class="modal-body">
+
+						JQuery是一个JavaScript函数库。
+						<br /> jQuery是一个轻量级的"写的少，做的多"的JavaScript库。
+						<br /> jQuery库包含以下功能：
+						<br />
+						<ul>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+							<li>Lorem ipsum</li>
+						</ul>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			$(document).on('click', '.node-icon', function() {
+
+				$('#info').modal('show');
+
+			});
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,33 @@
+.node-box {
+	padding: 10px 0;
+}
+
+.node {
+	position: relative;
+	height: 30px;
+}
+
+.node-icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: solid 1px #ddd;
+	background-color: #eee;
+	float: left;
+	cursor: pointer;
+}
+
+.node-text {
+	float: left;
+	node-line-height: 30px;
+	padding-left: 15px;
+}
+
+.node-line {
+	position: relative;
+	width: 1px;
+	background-color: #ddd;
+	height: 50px;
+	left: 15px;
+	top: 0;
+}
